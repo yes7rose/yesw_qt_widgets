@@ -7,12 +7,11 @@
 
 from qtpy import QtWidgets
 
-
 class BrowsDirNameWidget(QtWidgets.QWidget):
     """
     """
 
-    def __init__(self, open_location="\.", file_filter="*.*", parent=None):
+    def __init__(self, open_location="\.", parent=None):
         super(BrowsDirNameWidget, self).__init__()
 
         self._dir_name_lable = QtWidgets.QLabel("Dir Name")
@@ -20,7 +19,7 @@ class BrowsDirNameWidget(QtWidgets.QWidget):
         self._dir_name_browseBtn = QtWidgets.QPushButton("Browse")
 
         self._open_location = open_location
-        self._file_filter = file_filter
+        self._dir_name_lineEdit.setText(open_location)
 
         self._main_layout = QtWidgets.QHBoxLayout()
 
