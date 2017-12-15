@@ -78,6 +78,9 @@ class BrowsSaveFileNameWidget(QtWidgets.QWidget):
     def getFileName(self):
         return self._file_name_lineEdit.text()
 
+    def setFileName(self, file_name):
+        self._file_name_lineEdit.setText(file_name)
+
 
 if __name__ == '__main__':
     import sys

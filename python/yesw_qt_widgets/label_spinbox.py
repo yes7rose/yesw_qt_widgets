@@ -23,6 +23,7 @@ class LabelSpinBox(QtWidgets.QWidget):
         self._mainLayout.addWidget(self._label)
         self._mainLayout.addWidget(self._spinbox)
         self._mainLayout.setContentsMargins(0, 0, 0, 0)
+        self._mainLayout.addStretch()
 
         self.setLayout(self._mainLayout)
 
